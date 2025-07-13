@@ -77,7 +77,7 @@ JOIN Salesman ON Customer.Salesman_id = Salesman.Salesman_id;
 
 
 
-ELECT Orders.ord_no, Customer.cust_name, Orders.customer_id, Orders.Salesman.id
+SELECT Orders.ord_no, Customer.cust_name, Orders.customer_id, Orders.Salesman.id
 FROM Orders
 JOIN Customer ON Orders.customer_id = customer.customer_id
 JOIN Salesman ON Orders.Salesman_Id = Salesman.Salesman_id
