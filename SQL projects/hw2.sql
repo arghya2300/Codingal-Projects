@@ -1,16 +1,16 @@
-
+-- Create Customers table
 CREATE TABLE Customers (
-    customer_id INT PRIMARY KEY,
-    name VARCHAR(100),
-    country VARCHAR(100)
+  customer_id INTEGER,
+  name TEXT,
+  country TEXT
 );
 
+-- Create Products table
 CREATE TABLE Products (
-    product_id INT PRIMARY KEY,
-    customer_id INT,
-    product_name VARCHAR(100),
-    export_country VARCHAR(100),
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+  product_id INTEGER,
+  customer_id INTEGER,
+  product_name TEXT,
+  export_country TEXT
 );
 
 INSERT INTO Customers (customer_id, name, country) VALUES
